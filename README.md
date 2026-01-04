@@ -3,8 +3,7 @@
 A pastel-themed personal portfolio website built using HTML and CSS.
 
 ## 🔗 Live Website
-file:///D:/portfolio/index.html
-
+https://nehal-garg.github.io/Portfolio-/
 ## 🛠 Tech Stack
 - HTML
 - CSS
