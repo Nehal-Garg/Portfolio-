@@ -175,9 +175,13 @@ body {
 }
 
 
-.floating-img {
-  width: 130px;          /* controls size */
-  max-width: 35%;
+/* CONTACT PAGE IMAGE FIX */
+.contact-card {
+  position: relative;
+}
+
+.contact-card .floating-img {
+  width: 120px;          /* FINAL controlled size */
   height: auto;
 
   position: absolute;
@@ -185,12 +189,6 @@ body {
   bottom: 30px;
 
   animation: float 3s ease-in-out infinite;
-  z-index: 2;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  z-index: 1;
 }
 
