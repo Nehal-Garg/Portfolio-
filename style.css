@@ -187,8 +187,10 @@ body {
   position: absolute;
   right: 30px;
   bottom: 30px;
+  border-radius: 12px;
 
   animation: float 3s ease-in-out infinite;
   z-index: 1;
 }
+
 
