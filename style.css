@@ -175,15 +175,22 @@ body {
 }
 
 
-/* Contact page floating image */
 .floating-img {
-  width: 180px;
+  width: 130px;          /* controls size */
+  max-width: 35%;
+  height: auto;
+
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: 30px;
+  bottom: 30px;
+
   animation: float 3s ease-in-out infinite;
+  z-index: 2;
 }
 
 @keyframes float {
   0% { transform: translateY(0); }
-  50
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
