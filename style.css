@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  min-height: 100vh;
+  background: url("bg/pink-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff6f8;
+  width: 80%;
+  max-width: 1100px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.card.wide {
+  flex-direction: column;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pink {
+  color: #d66b8c;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #d66b8c;
+  text-decoration: none;
+  color: #d66b8c;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #d66b8c;
+  color: white;
+}
+
+.btn.active {
+  background: #d66b8c;
+  color: white;
+}
+
+.btn.secondary {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-img,
+.about-img {
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.cert-list a {
+  color: #b84d73;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cert-list a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  color: #b84d73;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.fade-in {
+  animation: fade 1s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.cert-item {
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.cert-item h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.cert-item h2 a {
+  color: #b84d73; /* DARK PINK */
+  text-decoration: none;
+}
+
+.cert-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.cert-item p {
+  margin: 4px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+/* contact page right image */
+.contact-img {
+  width: 220px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* soft floating animation */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* linkedin link */
+.pink-link {
+  color: #d36c8d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pink-link:hover {
+  text-decoration: underline;
+}
