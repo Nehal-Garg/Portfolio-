@@ -171,4 +171,19 @@ body {
 
 .pink-link:hover {
   text-decoration: underline;
+
 }
+
+
+/* Contact page floating image */
+.floating-img {
+  width: 180px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50
